@@ -1,0 +1,19 @@
+<html>
+<head>
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<h3><u>Users of that poject</u></h3>
+<ul>
+{% for user in users %}
+  <li><a href="users/{{ user.name }}.html">{{ user.name }}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

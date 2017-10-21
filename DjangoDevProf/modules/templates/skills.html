@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Skills</title>
+
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+
+</head>
+<body>
+<h3><u>What user has what skills? </u></h3>
+<h3> Lets see how the skills are split up between files</h3>
+<table width ="100%">
+    <tr><td>Skills</td></tr>
+         {% for key, value in _dict.iteritems() %}
+        <tr><th colspan="2">Skill: {{key}}</th></tr>
+            {% for user in value %}
+            <tr>
+                <td><a href="users/{{user}}.html">{{user}}</a> </a</td>
+            </tr>
+            {% endfor %}
+        {% endfor %}
+
+
+
+        <tr><td></td></tr>
+
+    </tr>
+</table>
+<br><br> Do you want to see those values ordered by Filename? <a href="index.html"> File --> Users</a>
+</body>
+</html>

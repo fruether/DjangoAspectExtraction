@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+That are the collected values of skills for the <u>{{file}}</u>
+<ul>
+    {% for (skill, loc) in skills %}
+        <li>{{skill}} --> {{loc}}</li>
+
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>

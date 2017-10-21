@@ -1,0 +1,8 @@
++++ b/101worker/tools/reporter.py
++emailTo = "101companies@gmail.com"
++	logfile = open('../101logs/runner.log', 'r')
++	lastArchive = open('../101web/logs/lastArchive', 'r')
++	time = lastArchive.read()
++			#print l
++log = buildMailContent()
++message.Html = log

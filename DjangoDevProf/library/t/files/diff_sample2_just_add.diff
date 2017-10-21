@@ -1,0 +1,2 @@
++        except Exception as e:
++            self.failures.append({"error" : str(e), "rule" : rule})
